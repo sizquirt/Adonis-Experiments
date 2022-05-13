@@ -5,6 +5,9 @@
 
 		"ServerScriptService": {
 			"$className": "ServerScriptService",
+		
+		"ServerStorage": {
+			"$className": "ServerStorage",
 
 			"Adonis_Rojo": {
 				"$className": "Folder",
