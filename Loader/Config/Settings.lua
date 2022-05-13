@@ -175,28 +175,28 @@ local descs = {};			--// Contains settings descriptions
 		["Moderators"] = {
 			Level = 100;
 			Users = {
-				--// Add users here
+			"", ""	--// Add users here.
 			};
 		};
 
 		["Admins"] = {
 			Level = 200;
 			Users = {
-				--// Add users here
+			"", ""	--// Add users here.
 			};
 		};
 
 		["HeadAdmins"] = {
 			Level = 300;
 		 	Users = {
-				--// Add users here
+			"", ""	--// Add users here.
 			};
 		};
 
 		["Creators"] = {
 			Level = 900; --// Anything 900 or higher will be considered a creator and will bypass all perms & be allowed to edit settings in-game.
 			Users = {
-				--// Add users here (Also, don't forget quotations and all that)
+			"", ""	--// Add users here.
 			};
 		};
 	};
@@ -216,7 +216,7 @@ local descs = {};			--// Contains settings descriptions
 
 	settings.Banned = {};		-- List of people banned from the game 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID"; "GamePass:GamePassID";}
 	settings.Muted = {};			-- List of people muted (cannot send chat messages)				 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID"; "GamePass:GamePassID";}
-	settings.Blacklist = {};		-- List of people banned from running commands 	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID"; "GamePass:GamePassID";}
+	settings.Blacklist = {};	-- UNUSED	-- List of people banned from running commands 	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID"; "GamePass:GamePassID";}
 	settings.Whitelist = {};		-- People who can join if whitelist enabled	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID"; "GamePass:GamePassID";}
 
 	settings.MusicList = {}; 	-- List of songs to appear in the :musiclist	  Format: {{Name = "somesong", ID = 1234567}, {Name = "anotherone", ID = 1243562}}
@@ -230,7 +230,7 @@ local descs = {};			--// Contains settings descriptions
 	settings.SaveAdmins = true		  -- If true anyone you :admin or :headadmin in-game will save
 	settings.WhitelistEnabled = false -- If true enables the whitelist/server lock; Only lets admins & whitelisted users join
 
-	settings.Prefix = ":"				-- The : in :kill me
+	settings.Prefix = ":"				-- The : in :kill me, You can change this to ; for ease.
 	settings.PlayerPrefix = "!"			-- The ! in !donate; Mainly used for commands that any player can run; Do not make it the same as settings.Prefix
 	settings.SpecialPrefix = ""			-- Used for things like "all", "me" and "others" (If changed to ! you would do :kill !me)
 	settings.SplitKey = " "				-- The space in :kill me (eg if you change it to / :kill me would be :kill/me)
@@ -277,12 +277,12 @@ local descs = {};			--// Contains settings descriptions
 		Client = false;				-- Allow access to the Client (not recommended)
 		Settings = false;			-- Allow access to settings (not recommended)
 		DataStore = false;			-- Allow access to the DataStore (not recommended)
-		Core = false;				-- Allow access to the script's core table (REALLY not recommended)
+		Core = false;				-- Allow access to the script's core table (HIGHLY NOT RECOMMENDED)
 		Service = false;			-- Allow access to the script's service metatable
 		Remote = false;				-- Communication table
 		HTTP = false; 				-- HTTP related things like Trello functions
 		Anti = false;				-- Anti-Exploit table
-		Logs = false;
+		Logs = false;                           -- Logs the chat and exploit executions if true.
 		UI = false;					-- Client UI table
 		Admin = false;				-- Admin related functions
 		Functions = false;			-- Functions table (contains functions used by the script that don't have a subcategory)
