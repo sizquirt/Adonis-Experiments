@@ -7,12 +7,9 @@
     </a>
 </div>
 <hr/> 
+## vMGMT is long discontinued! It has not recieved any major or minor updates since July 2022, Fork it if you need to and don't create an issue.
 
-Adonis is a server moderation and management system created for use on the Roblox platform.
-
-## Installation
-
-### Main Method: Official Roblox Model
+### Installation Main Method: Official Roblox Model
 
 * [Take a copy](https://www.roblox.com/library/7503263693/) of the Adonis loader model from the Roblox library
 
